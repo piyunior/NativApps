@@ -34,7 +34,7 @@ app.get("/get_movies", async (req, res, next) => {
         } else {
             let bd = db.db("OMDb-Movies");
             //Consulto si existe la colección, para no insertar data duplicada.
-            bd.listCollections({ "name": "movielist_Fecha(202102071230)jramos" }).next(async (err, coll) => {
+            bd.listCollections({ "name": "movielist_202102071230jramos" }).next(async (err, coll) => {
                 if (coll) {
                     //Si existe la colección, solo busco los datos;
                     let document = await movies.getMovies(bd);

@@ -41,7 +41,7 @@ async function insertMovies(dataBase) {
                     poster: x.Poster
                 }
             });
-            dataBase.collection('movielist_Fecha(202102071230)jramos').insertMany(auxArr, (err, res) => {
+            dataBase.collection('movielist_202102071230jramos').insertMany(auxArr, (err, res) => {
                 if (err) {
                     status = false;
                 };
